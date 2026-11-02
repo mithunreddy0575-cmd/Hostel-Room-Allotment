@@ -1,47 +1,89 @@
 # 🏠 Hostel Room Allotment & Mess Billing Engine
 
-A web-based hostel management system designed to simplify student registration, room allocation, room occupancy tracking and monthly mess billing.
+### A Web-Based Hostel Management System
 
-🌐 **Live Demo:** [Open Hostel Management System](https://mithunreddy0575-cmd.github.io/Hostel-Room-Allotment/)
+A simple and efficient web application designed to manage hostel student registration, room allocation, occupancy tracking and monthly mess billing.
+
+🌐 **Live Demo:** [Visit Hostel Management System](https://mithunreddy0575-cmd.github.io/Hostel-Room-Allotment/)
+
+💻 **Source Code:** [GitHub Repository](https://github.com/mithunreddy0575-cmd/Hostel-Room-Allotment)
 
 ---
 
 ## 📌 Project Overview
 
-The Hostel Room Allotment & Mess Billing Engine is a simple web application built using HTML, CSS and JavaScript.
+The Hostel Room Allotment & Mess Billing Engine is a browser-based application developed using HTML, CSS and JavaScript.
 
-It helps hostel administrators manage student details, allocate rooms based on availability and gender restrictions, record monthly meal counts and automatically calculate hostel bills.
+The application simplifies hostel administration by providing student management, automated room allotment, room availability monitoring and monthly mess bill generation through a single dashboard.
 
-## ✨ Features
+---
 
-* 👨‍🎓 Add, search and delete student records.
-* 🏠 Allocate Single, Double and Triple-sharing rooms.
+## 📸 Project Screenshots
+
+### 1. Dashboard
+
+Displays total students, students with rooms, available beds, room occupancy and monthly billing statistics.
+
+![Dashboard](dashboard.png)
+
+### 2. Student Management
+
+Add new students, manage student details, search records and delete student information.
+
+![Students](students.png)
+
+### 3. Room Management
+
+Monitor room availability, occupancy and room-sharing capacity.
+
+![Rooms](rooms.png)
+
+### 4. Mess & Billing Management
+
+Record monthly meals, calculate individual student bills and view the total amount to collect.
+
+![Mess and Billing](mess-billing.png)
+
+---
+
+## ✨ Key Features
+
+* 👨‍🎓 Student registration and management.
+* 🔍 Search students by ID, name or department.
+* 🏠 Single, Double and Triple room allocation.
 * 🚻 Separate room allocation for boys and girls.
-* 🛏️ Track room occupancy and available beds.
-* 🍽️ Record monthly meals for students.
-* 💰 Automatically calculate mess charges and room rent.
-* 🧾 Generate individual student bills.
-* 📊 View total monthly billing information.
+* 🛏️ Automatic room capacity management.
+* 📊 Dashboard with live hostel statistics.
+* 🍽️ Monthly meal recording.
+* 💰 Automatic mess bill calculation.
+* 🧾 Individual student bill generation.
 * 📄 Print bills or save them as PDF.
-* 📱 Responsive interface for different screen sizes.
+* 💾 Browser-based data storage using LocalStorage.
+
+---
 
 ## 🛠️ Technologies Used
 
-| Technology   | Purpose                       |
-| ------------ | ----------------------------- |
-| HTML5        | Website structure             |
-| CSS3         | Styling and responsive design |
-| JavaScript   | Application logic             |
-| LocalStorage | Browser-based data storage    |
-| GitHub Pages | Website hosting               |
+| Technology   | Application                |
+| ------------ | -------------------------- |
+| HTML5        | Website structure          |
+| CSS3         | User interface and styling |
+| JavaScript   | Application functionality  |
+| LocalStorage | Browser-based data storage |
+| GitHub       | Source code management     |
+| GitHub Pages | Website deployment         |
 
-## 💵 Billing Calculation
+---
 
-The monthly bill is calculated using:
+## 💵 Mess Billing Calculation
 
-**Total Bill = (Meals × ₹45) + ₹500 + Room Rent**
+The application automatically calculates the monthly hostel bill.
 
-### Monthly Room Rent
+**Billing Formula:**
+
+Total Bill = (Meals × ₹45) + ₹500 + Room Rent
+
+### Room Rent Details
 
 | Room Type      | Monthly Rent |
 | -------------- | -----------: |
@@ -49,7 +91,11 @@ The monthly bill is calculated using:
 | Double Sharing |       ₹4,000 |
 | Triple Sharing |       ₹3,000 |
 
-The fixed mess charge is ₹500 per month.
+Fixed Mess Charge: ₹500 per month.
+
+Meal Charge: ₹45 per meal.
+
+---
 
 ## 📂 Project Structure
 
@@ -59,38 +105,53 @@ Hostel-Room-Allotment/
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+├── README.md
+│
+├── dashboard.png
+├── students.png
+├── rooms.png
+└── mess-billing.png
 ```
 
-## 🚀 How to Run Locally
+---
 
-1. Download or clone this repository.
+## 🚀 How to Run the Project
+
+1. Clone or download this repository.
 2. Open the project folder in Visual Studio Code.
 3. Open `index.html` in your browser.
-4. Alternatively, use the Live Server extension in VS Code.
+4. Alternatively, use the Live Server extension.
 
-No additional installation is required.
+No additional installations are required.
+
+---
 
 ## 💾 Data Storage
 
-The application uses browser LocalStorage to save student information, room allocation and meal records.
+The application uses JavaScript LocalStorage to save student records, room allocation and monthly meal information.
 
-**Note:** Data is stored locally in the browser and is not shared between different users or devices.
+**Note:** Data is stored in the browser where the application is used. It is not synchronized between different users or devices.
 
-## 🔮 Future Improvements
+---
 
-* Admin and student login system.
+## 🔮 Future Enhancements
+
+* Admin and student login authentication.
 * Database integration using Firebase or MySQL.
+* Online hostel fee payment.
 * Student attendance management.
-* Online payment integration.
 * Monthly financial reports.
-* Hostel complaint management.
+* Hostel complaint management system.
+* Centralized data management.
 
-## 👨‍💻 Developer
+---
 
-**Mithun Reddy**
+## 🎯 Project Objective
 
-Project: Hostel Room Allotment & Mess Billing Engine
+To develop a simple and efficient digital solution that reduces manual work in hostel administration and makes student management, room allocation and mess billing easier.
 
-GitHub: [View Source Code](https://github.com/mithunreddy0575-cmd/Hostel-Room-Allotment)
+---
+
+⭐ If you find this project interesting, consider giving this repository a star!
+
 
