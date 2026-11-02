@@ -4,7 +4,7 @@ A web version of my Core Java hostel project, built with plain HTML, CSS and Jav
 
 ![Website preview](screenshot.png)
 
-**Live demo:** https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
+**Live demo:** https://mithunreddy0575-cmd.github.io/Hostel-Room-Allotment/
 
 ## Features
 - Add, search and delete students
