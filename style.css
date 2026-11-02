@@ -1,0 +1,54 @@
+/* Colours: black background, white text, cobalt blue (#0047ab) for highlights. Change them in :root below. */
+:root{--bg:#0b0b0c;--card:#16171a;--line:#2a2d33;--text:#fff;--mute:#a3acba;--cb:#0047ab;--cbh:#6b9be8;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 Calibri,"Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 48px}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:24px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:46px;height:46px;border-radius:12px;background:var(--cb);display:grid;place-items:center;font-size:22px;flex:none}
+h1{font-size:20px;margin:0;line-height:1.2}.sub{color:var(--mute);font-size:13px}
+nav{display:flex;gap:6px;overflow-x:auto;max-width:100%}
+nav button{background:none;border:1px solid var(--line);color:var(--mute);padding:8px 14px;border-radius:999px;font:inherit;cursor:pointer;white-space:nowrap}
+nav button.on{background:var(--cb);border-color:var(--cb);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.stat b{display:block;font-size:34px;color:var(--cbh);line-height:1.1}.stat span{color:var(--mute);font-size:14px}
+h2{font-size:18px;margin:0 0 14px}
+label{display:block;font-size:13px;color:var(--mute);margin-bottom:4px}
+input,select{width:100%;background:#0f1012;color:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 11px;font:inherit}
+input:focus,select:focus{outline:2px solid var(--cb);border-color:var(--cb)}
+td select{width:auto;padding:6px 8px}
+.btn{background:var(--cb);color:#fff;border:0;border-radius:10px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer}
+.btn.ghost{background:none;border:1px solid var(--line);color:var(--text)}
+.btn.sm{padding:6px 12px;font-size:14px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th{text-align:left;color:var(--mute);font-weight:500;font-size:13px;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:middle}
+.pill{background:rgba(0,71,171,.4);color:#d6e4ff;border-radius:999px;padding:2px 10px;font-size:13px}
+.room h3{margin:0;font-size:22px;display:flex;justify-content:space-between;align-items:center}
+.beds{display:flex;gap:6px;margin:12px 0}
+.bed{width:22px;height:22px;border-radius:50%;border:2px solid var(--cb)}.bed.f{background:var(--cb)}
+.muted{color:var(--mute);font-size:14px}
+.rcpt{background:var(--cb);border-radius:14px;padding:20px;margin-top:18px}
+.rcpt div{display:flex;justify-content:space-between;gap:12px;padding:6px 0}
+.rcpt .t{border-top:1px solid rgba(255,255,255,.45);margin-top:8px;padding-top:12px;font-size:24px;font-weight:700}
+.sec{display:none}.sec.on{display:block}
+.row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:14px}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#fff;color:#000;padding:10px 18px;border-radius:10px;opacity:0;transition:opacity .2s;pointer-events:none;max-width:90%}
+#toast.on{opacity:1}
+
+/* ===== v2 additions ===== */
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.bar h2{margin:0}.bar input{max-width:280px}
+.btn.del{color:#ff9a9a}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+tfoot td{padding:12px 10px;font-size:17px}
+/* Print: only the bill is printed, so "Save as PDF" gives a clean receipt */
+@media print{
+ header,.no-print,#toast{display:none!important}
+ .sec{display:none!important}#bill.sec{display:block!important}
+ body{background:#fff;color:#000}.card{background:none;border:0;padding:0}
+ .rcpt{background:#fff;color:#000;border:2px solid #000}.rcpt .t{border-top-color:#000}
+}
